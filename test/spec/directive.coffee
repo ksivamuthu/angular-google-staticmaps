@@ -41,7 +41,7 @@ describe 'angular-google-staticmaps', ->
         </static-gmap>
       '''
       element = $compile(element)(@scope)
-      expect(element.attr('src')).toBe '//maps.googleapis.com/maps/api/staticmap?markers=color%3Ablue%7Clabel%3AS%7C53.556195%2C9.9905748&zoom=14&size=137x137&sensor=false'
+      expect(element.attr('src')).toBe 'https://maps.googleapis.com/maps/api/staticmap?markers=color%3Ablue%7Clabel%3AS%7C53.556195%2C9.9905748&zoom=14&size=137x137&sensor=false'
     )
 
     it 'should output an image for a markers literal', inject(($compile) =>
@@ -50,7 +50,7 @@ describe 'angular-google-staticmaps', ->
         </static-gmap>
       '''
       element = $compile(element)(@scope)
-      expect(element.attr('src')).toBe '//maps.googleapis.com/maps/api/staticmap?markers=10%2C20&size=137x137&sensor=false'
+      expect(element.attr('src')).toBe 'https://maps.googleapis.com/maps/api/staticmap?markers=10%2C20&size=137x137&sensor=false'
     )
 
   describe 'static-gmap controller', ->

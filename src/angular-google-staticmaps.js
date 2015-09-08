@@ -8,7 +8,7 @@
 
   angular.module('wu.staticGmap', [])
     .controller('StaticGmapCtrl', function () {
-      var BASE_URL = '//maps.googleapis.com/maps/api/staticmap?';
+      var BASE_URL = 'https://maps.googleapis.com/maps/api/staticmap?';
       var STYLE_ATTRIBUTES = ['color', 'label', 'size'];
 
       this.makeMarkerStrings = function makeMarkerStrings(markers) {
